@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechEase - Streamline Your Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>SIGN UP</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Username/Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <div id="successNotification" class="notification">
+        <p>Signup successful!</p>
+    </div>
+
+    <!-- Overlay for mobile menu background -->
+    <div class="overlay"></div>
+
+    <header>
+        <div class="container" id="headerContainer">
+            <img src="images/logo.png" alt="TechEase Logo" class="logo">
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#carousel">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#signuptoday">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Full-screen Sections -->
+    <section id="carousel">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="images/carousel-image1.jpg" alt="Feature 1">
+                <p>Streamline Your Workflow</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel-image2.jpg" alt="Feature 2">
+                <p>Automate Repetitive Tasks</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel-image3.jpg" alt="Feature 3">
+                <p>Collaborate Efficiently</p>
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="full-screen-section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Feature 1</h3>
+                    <p>Description of feature 1.</p>
+                </div>
+                <div class="feature">
+                    <h3>Feature 2</h3>
+                    <p>Description of feature 2.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="full-screen-section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p>Our clients love the results they've achieved with TechEase. Here are a few testimonials:</p>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <blockquote>
+                        <p>"TechEase has completely transformed the way we work. The task automation features have saved
+                            us countless hours!"</p>
+                    </blockquote>
+                    <cite>- John Doe, CEO of FutureTech</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>"As a remote team, collaboration can be difficult, but TechEase's real-time features make it
+                            feel like we're all in the same room."</p>
+                    </blockquote>
+                    <cite>- Jane Smith, Project Manager at InnovateX</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>"The analytics dashboard is a game-changer. We can now track our progress and make
+                            data-driven decisions with ease."</p>
+                    </blockquote>
+                    <cite>- Mark Lee, COO of DataWorks</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="signuptoday" class="full-screen-section">
+        <div class="container">
+            <h2>Sign Up Today</h2>
+            <p>Ready to get started? Join thousands of others who are already enjoying a streamlined workflow with
+                TechEase.</p>
+            <a href="#cta" class="sign-up-btn">Sign Up</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TechEase. All rights reserved.</p>
+            <ul class="social">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
